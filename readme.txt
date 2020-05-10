@@ -1,15 +1,15 @@
-# WP Offload Media Lite for Amazon S3, DigitalOcean Spaces, and Google Cloud Storage #
-**Contributors:** bradt, deliciousbrains, ianmjones  
-**Tags:** uploads, amazon, s3, amazon s3, digitalocean, digitalocean spaces, google cloud storage, gcs, mirror, admin, media, cdn, cloudfront  
-**Requires at least:** 4.9  
-**Tested up to:** 5.4  
-**Requires PHP:** 5.5  
-**Stable tag:** 2.3.2  
-**License:** GPLv3  
+=== WP Offload Media Lite for Amazon S3, DigitalOcean Spaces, and Google Cloud Storage ===
+Contributors: bradt, deliciousbrains, ianmjones
+Tags: uploads, amazon, s3, amazon s3, digitalocean, digitalocean spaces, google cloud storage, gcs, mirror, admin, media, cdn, cloudfront
+Requires at least: 4.9
+Tested up to: 5.4
+Requires PHP: 5.5
+Stable tag: 2.3.2
+License: GPLv3
 
 Copies files to Amazon S3, DigitalOcean Spaces or Google Cloud Storage as they are uploaded to the Media Library. Optionally configure Amazon CloudFront or another CDN for faster delivery.
 
-## Description ##
+== Description ==
 
 FORMERLY WP OFFLOAD S3 LITE
 
@@ -40,7 +40,7 @@ The video below runs through the pro upgrade features...
 
 https://www.youtube.com/watch?v=I-wTMXMeFu4
 
-## Installation ##
+== Installation ==
 
 1. Install this plugin using WordPress' built-in installer
 2. Access the *Offload Media* option under *Settings*
@@ -48,58 +48,50 @@ https://www.youtube.com/watch?v=I-wTMXMeFu4
 
 Check out the [Quick Start Guide](https://deliciousbrains.com/wp-offload-media/doc/quick-start-guide/?utm_campaign=WP%2BOffload%2BS3&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting) for more information on configuring WP Offload Media.
 
-## Frequently Asked Questions ##
+== Frequently Asked Questions ==
 
-### What are the minimum requirements? ###
+= What are the minimum requirements? =
 
 You can see the minimum requirements [here](https://deliciousbrains.com/wp-offload-media/pricing/?utm_campaign=WP%2BOffload%2BS3&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting&utm_content=requirements#requirements).
 
-### Do you offer email support? ###
+= Do you offer email support? =
 
 If you upgrade to the pro version of [WP Offload Media](https://deliciousbrains.com/wp-offload-media/upgrade/?utm_campaign=WP%2BOffload%2BS3&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting), we will gladly provide you with email support. We take pride in delivering exceptional customer support. We do not provide email support for the free version.
 
-## Screenshots ##
+== Screenshots ==
 
-### 1. Select Cloud Storage Provider ###
-![Select Cloud Storage Provider](https://raw.githubusercontent.com/deliciousbrains/wp-wp-offload-media-lite-for-amazon-s3,-digitalocean-spaces,-and-google-cloud-storage/assets/screenshot-1.png)
+1. Select Cloud Storage Provider
+2. Select or Create Bucket
+3. Settings Screen
+3. Custom Domain Used With CDN
 
-### 2. Select or Create Bucket ###
-![Select or Create Bucket](https://raw.githubusercontent.com/deliciousbrains/wp-wp-offload-media-lite-for-amazon-s3,-digitalocean-spaces,-and-google-cloud-storage/assets/screenshot-2.png)
+== Upgrade Notice ==
 
-### 3. Settings Screen ###
-![Settings Screen](https://raw.githubusercontent.com/deliciousbrains/wp-wp-offload-media-lite-for-amazon-s3,-digitalocean-spaces,-and-google-cloud-storage/assets/screenshot-3.png)
-
-### 4. Custom Domain Used With CDN ###
-![Custom Domain Used With CDN](https://raw.githubusercontent.com/deliciousbrains/wp-wp-offload-media-lite-for-amazon-s3,-digitalocean-spaces,-and-google-cloud-storage/assets/screenshot-4.png)
-
-
-## Upgrade Notice ##
-
-### 2.3 ###
+= 2.3 =
 This is a major upgrade that switches to using a custom table for storing data about offloaded Media Library items. Once upgraded you will not be able to downgrade without restoring data from a backup.
 
-### 2.0 ###
+= 2.0 =
 This is a major upgrade that introduces support for DigitalOcean Spaces, renames the plugin to WP Offload Media Lite, and coincidentally upgrades some of its database settings. You may not be able to downgrade to WP Offload S3 Lite 1.x after upgrading to WP Offload Media Lite 2.0+.
 
-### 1.1 ###
+= 1.1 =
 This is a major change, which ensures S3 URLs are no longer saved in post content. Instead, local URLs are filtered on page generation and replaced with the S3 version. If you depend on the S3 URLs being stored in post content you will need to make modifications to support this version.
 
-### 0.6 ###
+= 0.6 =
 This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 
-## Changelog ##
+== Changelog ==
 
-### WP Offload Media Lite 2.3.2 - 2019-12-09 ###
+= WP Offload Media Lite 2.3.2 - 2019-12-09 =
 * Improvement: Reduced database queries when external object cache available
 * Bug fix: Uncaught Error: Call to undefined function DeliciousBrains\WP_Offload_Media\Gcp\GuzzleHttp\choose_handler()
 * Bug fix: SVG files not automatically offloaded
 * Tested: PHP 7.4
 
-### WP Offload Media Lite 2.3.1 - 2019-11-19 ###
+= WP Offload Media Lite 2.3.1 - 2019-11-19 =
 * Bug fix: Uncaught Error: Cannot use object of type Media_Library_Item as array in wp-includes/media.php:217
 * Bug fix: Image not automatically offloaded if subsizes not expected
 
-### WP Offload Media Lite 2.3 - 2019-11-12 ###
+= WP Offload Media Lite 2.3 - 2019-11-12 =
 * [Release Summary Blog Post](https://deliciousbrains.com/wp-offload-media-2-3-released/?utm_campaign=changelogs&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting)
 * New: Upgrade routine to migrate offload data to custom table
 * New: Support for changed Media Library upload process introduced with WordPress 5.3
@@ -111,19 +103,19 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Bug fix: New Media Library upload given same local file name as offloaded and removed file after Remove Files From Server turned off
 * Bug fix: PHP message: PHP Deprecated: strpos(): Non-string needles will be interpreted as strings in the future
 
-### WP Offload Media Lite 2.2.1 - 2019-07-18 ###
+= WP Offload Media Lite 2.2.1 - 2019-07-18 =
 * Improvement: Menu option and settings page title now include "Lite"
 * Improvement: Remove Files From Server option now warns about media backups when switched on
 * Bug fix: Undefined index in file amazon-s3-and-cloudfront/classes/filters/as3cf-local-to-s3.php at line 286
 
-### WP Offload Media Lite 2.2 - 2019-06-10 ###
+= WP Offload Media Lite 2.2 - 2019-06-10 =
 * [Release Summary Blog Post](https://deliciousbrains.com/wp-offload-media-2-2-released/?utm_campaign=changelogs&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting)
 * New: Use IAM Roles without having to update wp-config.php
 * New: Frankfurt (FRA1) region now supported on DigitalOcean Spaces
 * Improvement: WP dashboard performance
 * Bug fix: Uploaded media files with uppercase extensions get second extension added
 
-### WP Offload Media Lite 2.1.1 - 2019-04-29 ###
+= WP Offload Media Lite 2.1.1 - 2019-04-29 =
 * New: Multisite domain mapping via WordPress MU Domain Mapping plugin is now supported
 * Improvement: Local to Provider content filtering performance improvements
 * Improvement: Warning notice shown when changing storage provider and media already offloaded
@@ -134,7 +126,7 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Bug fix: No srcset added to img tag if filename includes non-ASCII characters
 * Bug fix: Full size image URL saved to img tag src attribute when thumbnail picked if filename includes non-ASCII characters
 
-### WP Offload Media Lite 2.1 - 2019-03-05 ###
+= WP Offload Media Lite 2.1 - 2019-03-05 =
 * [Release Summary Blog Post](https://deliciousbrains.com/wp-offload-media-2-1-released/?utm_campaign=changelogs&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting)
 * New: Google Cloud Storage is now supported
 * Improvement: AWS PHP SDK updated
@@ -144,7 +136,7 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Bug fix: PHP Fatal error: Uncaught Error: Call to undefined method ...\Aws3\Aws\S3\Exception\S3Exception::search() in .../classes/providers/aws-provider.php:439
 * Bug fix: PHP Warning: filesize(): stat failed for [file-path] in classes/amazon-s3-and-cloudfront.php on line 1309
 
-### WP Offload Media Lite 2.0.1 - 2018-12-17 ###
+= WP Offload Media Lite 2.0.1 - 2018-12-17 =
 * Improvement: Streamlined UI for setting Storage Provider and Bucket
 * Bug fix: On/Off switches in settings look reversed
 * Bug fix: Latest upgrade routine runs on fresh install
@@ -152,23 +144,23 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Bug fix: More Info links in Storage Provider settings incorrect
 * Tested: WordPress 5.0
 
-### WP Offload Media Lite 2.0 - 2018-09-24 ###
+= WP Offload Media Lite 2.0 - 2018-09-24 =
 * [Release Summary Blog Post](https://deliciousbrains.com/wp-offload-s3-is-now-wp-offload-media-and-adds-support-for-digitalocean-spaces/?utm_campaign=changelogs&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting)
 * New: DigitalOcean Spaces is now supported
 * New: Plugin name updated from WP Offload S3 Lite to WP Offload Media Lite
 * Improvement: More logical UI layout and better description of each setting
 
-### WP Offload S3 Lite 1.4.3 - 2018-08-02 ###
+= WP Offload S3 Lite 1.4.3 - 2018-08-02 =
 * Bug fix: Images remotely edited via stream wrapper sometimes set as private on S3
 
-### WP Offload S3 Lite 1.4.2 - 2018-07-03 ###
+= WP Offload S3 Lite 1.4.2 - 2018-07-03 =
 * Bug fix: Error getting bucket region
 * Bug fix: Child themes with missing or broken style.css break diagnostic info
 
-### WP Offload S3 Lite 1.4.1 - 2018-06-21 ###
+= WP Offload S3 Lite 1.4.1 - 2018-06-21 =
 * Bug fix: Incorrect filesize saved to metadata when image removed from local server
 
-### WP Offload S3 Lite 1.4 - 2018-06-12 ###
+= WP Offload S3 Lite 1.4 - 2018-06-12 =
 * New: Using AWS PHP SDK v3
 * New: Requires PHP 5.5+
 * Improvement: Supported AWS S3 regions updated and names changed to match current AWS nomenclature
@@ -180,15 +172,15 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Tested: WordPress 4.9.6
 * Tested: Gutenberg 3.0
 
-### WP Offload S3 Lite 1.3.2 - 2018-02-22 ###
+= WP Offload S3 Lite 1.3.2 - 2018-02-22 =
 * Bug fix: Fatal error: Uncaught Error: Call to undefined method Composer\Autoload\ClassLoader::setClassMapAuthoritative()
 * Bug fix: AWS keys stored in database by Amazon Web Services plugin are not being migrated to new settings record
 * Bug fix: Notice in settings page that Amazon Web Services plugin no longer required is not being shown when Amazon Web Services active
 
-### WP Offload S3 Lite 1.3.1 - 2018-02-20 ###
+= WP Offload S3 Lite 1.3.1 - 2018-02-20 =
 * Bug fix: Fatal error in stream wrapper setup when AWS Keys not set
 
-### WP Offload S3 Lite 1.3 - 2018-02-20 ###
+= WP Offload S3 Lite 1.3 - 2018-02-20 =
 * [Release Summary Blog Post](https://deliciousbrains.com/wp-offload-s3-1-6-released/?utm_campaign=changelogs&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting)
 * New: [Amazon Web Services plugin](https://wordpress.org/plugins/amazon-web-services/) is no longer required to run WP Offload S3 Lite
 * New: Added [`as3cf_local_domains`](https://deliciousbrains.com/wp-offload-s3/doc/filtering-urls-for-multiple-domains/?utm_campaign=changelogs&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting) filter for when site content is updated through multiple domains
@@ -205,7 +197,7 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Bug fix: Settings link not showing in network admin plugins page
 * Bug fix: License in composer.json fails Packagist validation
 
-### WP Offload S3 Lite 1.2.1 - 2017-11-20 ###
+= WP Offload S3 Lite 1.2.1 - 2017-11-20 =
 * New: Compatibility with HTML Widget
 * New: Dismissible admin notice that WP Offload S3 Lite will soon require PHP 5.5+
 * Improvement: Compatibility with WordPress 4.9
@@ -216,7 +208,7 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Bug fix: "Content Filtering Upgrade" URL in notice incorrect
 * Bug fix: "More info" links can be broken across two lines
 
-### WP Offload S3 Lite 1.2 - 2017-06-19 ###
+= WP Offload S3 Lite 1.2 - 2017-06-19 =
 * New: Compatibility with WordPress 4.8
 * New: Support for WP CLI `wp media regenerate`
 * Improvement: Intermediate image sizes are now passed through the `as3cf_object_meta` filter
@@ -227,7 +219,7 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Bug fix: WordPress image editor sometimes shows a 404 when 'Remove Files From Server' enabled
 * Bug fix: Notice: Undefined index: region
 
-### WP Offload S3 Lite 1.1.6 - 2017-03-13 ###
+= WP Offload S3 Lite 1.1.6 - 2017-03-13 =
 * New: Compatibility with [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/)
 * New: `as3cf_filter_post_local_to_s3` and `as3cf_filter_post_s3_to_local` filters added for filtering S3 URLs in custom content
 * Improvement: Ensure files uploaded using `media_handle_sideload` have unique filename on S3 when 'Remove Files From Server' enabled
@@ -238,31 +230,31 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Bug fix: Original file not removed locally when cropped via the Customizer and 'Remove Files From Server' enabled
 * Bug fix: Incorrect Media Library URLs saved to the database when WordPress installed in a subdirectory
 
-### WP Offload S3 Lite 1.1.5 - 2017-01-12 ###
+= WP Offload S3 Lite 1.1.5 - 2017-01-12 =
 * Improvement: Filter custom CSS - S3 URLs will no longer be saved to the database
 * Bug fix: PDF previews have incorrect MIME type
 * Bug fix: Original PDF not removed from S3 on attachment delete when image previews exist
 
-### WP Offload S3 Lite 1.1.4 - 2016-12-13 ###
+= WP Offload S3 Lite 1.1.4 - 2016-12-13 =
 * New: Upgrade routine to replace all S3 URLs in post excerpts with local URLs
 * Improvement: Performance improvements
 * Improvement: Allow expires time to be filtered for private content using the `as3cf_expires` filter
 * Bug fix: Image `srcset` not correctly applied when file names contain special characters
 
-### WP Offload S3 Lite 1.1.3 - 2016-11-28 ###
+= WP Offload S3 Lite 1.1.3 - 2016-11-28 =
 * Bug fix: Private URL signing params stripped in some circumstances
 * Improvement: Performance improvements for URL filtering, especially on large sites
 
-### WP Offload S3 Lite 1.1.2 - 2016-11-02 ###
+= WP Offload S3 Lite 1.1.2 - 2016-11-02 =
 * Improvement: Better content filtering support for third party plugins and themes
 * Bug fix: PHP Warning: Division by zero
 
-### WP Offload S3 Lite 1.1.1 - 2016-10-17 ###
+= WP Offload S3 Lite 1.1.1 - 2016-10-17 =
 * New: Filter post excerpts - S3 URLs will no longer be saved to the database
 * Bug fix: PHP 5.3 Fatal error: Using $this when not in object context
 * Bug fix: Query string parameters incorrectly encoded for Media Library items
 
-### WP Offload S3 Lite 1.1 - 2016-09-29 ###
+= WP Offload S3 Lite 1.1 - 2016-09-29 =
 * New: Filter post content. S3 URLs will no longer be saved to the database
 * New: Upgrade routine to replace all S3 URLs in content with local URLs
 * New: Support for theme custom logos
@@ -274,11 +266,11 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Bug fix: No longer use deprecated functions in WordPress 4.6
 * Bug fix: Don't delete local file when 'Remove Files From Server' enabled and upload to S3 fails
 
-### WP Offload S3 Lite 1.0.5 - 2016-09-01 ###
+= WP Offload S3 Lite 1.0.5 - 2016-09-01 =
 * New: Compatibility with WordPress 4.6
 * Improvement: No longer delete plugin data on uninstall. Manual removal possible, as per this [doc](https://deliciousbrains.com/wp-offload-s3/doc/uninstall/?utm_campaign=changelogs&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting)
 
-### WP Offload S3 Lite 1.0.4 - 2016-05-30 ###
+= WP Offload S3 Lite 1.0.4 - 2016-05-30 =
 * New: Now using simpler Force HTTPS setting, removed redundant Always Use HTTP setting
 * New: `as3cf_cloudfront_path_parts` filter allows changing served CloudFront path (useful when distribution pulls subdirectory)
 * Improvement: Better compatibility with non-standard notices from other plugins and themes
@@ -289,18 +281,18 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Improvement: Reduced database queries on settings screen
 * Bug fix: Properly handle _wp_attachment_data metadata when it is a serialized WP_Error
 
-### WP Offload S3 Lite 1.0.3 - 2016-03-23 ###
+= WP Offload S3 Lite 1.0.3 - 2016-03-23 =
 * Bug fix: Don't replace srcset URLs when Rewrite File URLs option disabled
 * Bug fix: Fatal error: Cannot redeclare as3cf_get_secure_attachment_url()
 
-### WP Offload S3 Lite 1.0.2 - 2016-03-08 ###
+= WP Offload S3 Lite 1.0.2 - 2016-03-08 =
 * Bug fix: Uninstall would run even if pro plugin installed
 
-### WP Offload S3 Lite 1.0.1 - 2016-03-08 ###
+= WP Offload S3 Lite 1.0.1 - 2016-03-08 =
 * Bug fix: Fatal error on plugin activation
 * Bug fix: Unable to activate Pro upgrade
 
-### WP Offload S3 Lite 1.0 - 2016-03-07 ###
+= WP Offload S3 Lite 1.0 - 2016-03-07 =
 * New: Plugin renamed to "WP Offload S3 Lite"
 * New: Define any and all settings with a constant in wp-config.php
 * New: Documentation links for each setting
@@ -315,20 +307,20 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Bug fix: Potential PHP fatal error in MySQL version check in diagnostic log
 * Bug fix: Missing image library notices displaying before plugin is setup
 
-### WP Offload S3 0.9.12 - 2016-02-03 ###
+= WP Offload S3 0.9.12 - 2016-02-03 =
 * Improvement: Compatibility with WP Offload S3 Assets 1.1
 * Bug fix: Object versioned responsive images in post content not working when served from S3 on WordPress 4.4+
 
-### WP Offload S3 0.9.11 - 2015-12-19 ###
+= WP Offload S3 0.9.11 - 2015-12-19 =
 * Bug fix: Responsive images in post content not working when served from S3
 * Bug fix: Responsive images using wrong image size when there are multiple images with the same width
 
-### WP Offload S3 0.9.10 - 2015-11-26 ###
+= WP Offload S3 0.9.10 - 2015-11-26 =
 * Improvement: Support for responsive images in WP 4.4
 * Bug fix: Incorrect file path for intermediate image size files uploaded to S3 with no prefix
 * Bug fix: Thumbnail previews return 404 error during image edit screen due to character encoding
 
-### WP Offload S3 0.9.9 - 2015-11-12 ###
+= WP Offload S3 0.9.9 - 2015-11-12 =
 * Improvement: Improve wording of compatibility notices
 * Improvement: Compatibility with Easy Digital Downloads 1.0.1 and WooCommerce 1.0.3 addons
 * Improvement: Better determine available memory for background processes
@@ -336,10 +328,10 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Bug fix: PHP Warning: stream_wrapper_register(): Protocol s3:// is already defined
 * Bug fix: PHP Fatal error:  Call to undefined method WP_Error::get()
 
-### WP Offload S3 0.9.8 - 2015-11-02 ###
+= WP Offload S3 0.9.8 - 2015-11-02 =
 * Bug fix: Attachment URLs containing query string parameters incorrectly encoded
 
-### WP Offload S3 0.9.7 - 2015-10-26 ###
+= WP Offload S3 0.9.7 - 2015-10-26 =
 * Improvement: Improve compatibility with third party plugins when the _Remove Files From Server_ option is enabled
 * Improvement: Fix inconsistent spacing on the WP Offload S3 settings screen
 * Improvement: Validate _CloudFront or custom domain_ input field
@@ -357,13 +349,13 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Bug fix: Cron tasks incorrectly scheduled due to passing the wrong time to `wp_schedule_event`
 * Bug fix: Default options not shown in the UI after first install
 
-### WP Offload S3 0.9.6 - 2015-10-01 ###
+= WP Offload S3 0.9.6 - 2015-10-01 =
 * Improvement: Update text domains for translate.wordpress.org integration
 
-### WP Offload S3 0.9.5 - 2015-09-01 ###
+= WP Offload S3 0.9.5 - 2015-09-01 =
 * Bug fix: Fatal error: Cannot use object of type WP_Error as array
 
-### WP Offload S3 0.9.4 - 2015-08-27 ###
+= WP Offload S3 0.9.4 - 2015-08-27 =
 * New: Update all existing attachments with missing file sizes when the 'Remove Files From Server' option is enabled (automatically runs in the background)
 * Improvement: Show when constants are used to set bucket and region options
 * Improvement: Don't show compatibility notices on plugin update screen
@@ -374,14 +366,14 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Bug fix: Upload attempted to non existent bucket when defined by constant
 * Bug fix: 'SignatureDoesNotMatch' error shown when using signed URLs with bucket names containing '.' characters
 
-### WP Offload S3 0.9.3 - 2015-08-17 ###
+= WP Offload S3 0.9.3 - 2015-08-17 =
 * New: Pro upgrade sidebar
 * Bug fix: Create buckets in US standard region causing S3 URLs to 404 errors
 
-### WP Offload S3 0.9.2 - 2015-07-29 ###
+= WP Offload S3 0.9.2 - 2015-07-29 =
 * Bug fix: Accidentally released the sidebar for after we launch the pro version
 
-### WP Offload S3 0.9.1 - 2015-07-29 ###
+= WP Offload S3 0.9.1 - 2015-07-29 =
 * Improvement: Access denied sample IAM policy replaced with link to [Quick Start Guide](https://deliciousbrains.com/wp-offload-s3/doc/quick-start-guide/?utm_campaign=changelogs&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting)
 * Improvement: Access denied messages on bucket selection or bucket creation now link to [Quick Start Guide](https://deliciousbrains.com/wp-offload-s3/doc/quick-start-guide/?utm_campaign=changelogs&utm_source=wordpress.org&utm_medium=free%2Bplugin%2Blisting)
 * Improvement: Object expires time can now be filtered using the `as3cf_object_meta` filter
@@ -395,7 +387,7 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Bug fix: WordPress footer overlaps WP Offload S3 sidebar
 * Bug fix: Upon initial setup the settings changed alert shows when no settings have changed
 
-### WP Offload S3 0.9 - 2015-07-08 ###
+= WP Offload S3 0.9 - 2015-07-08 =
 * New: Plugin rebranded to WP Offload S3
 * New: Support tab added to _Offload S3_ screen containing diagnostic information
 * New: Compatibility with the [Media Replace](https://wordpress.org/plugins/enable-media-replace/) plugin
@@ -425,19 +417,19 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Bug fix: Subsite upload paths repeated on multisite installs
 * Bug fix: Handle multisite installs where `BLOG_ID_CURRENT_SITE` is not 1
 
-### WP Offload S3 0.8.2 - 2015-01-31 ###
+= WP Offload S3 0.8.2 - 2015-01-31 =
 * New: Input bucket in settings to avoid listing all buckets
 * New: Specify bucket with 'AS3CF_BUCKET' constant
 * Improvement: Compatibility with beta release of Pro plugin
 * Bug Fix: Incorrect file prefix in S3 permission check
 
-### WP Offload S3 0.8.1 - 2015-01-19 ###
+= WP Offload S3 0.8.1 - 2015-01-19 =
 * Bug Fix: Permission problems on installs running on EC2s
 * Bug Fix: Blank settings page due to WP_Error on S3 permission check
 * Bug Fix: Warning: strtolower() expects parameter 1 to be string, object given
 * Bug Fix: Region post meta update running on subsites of Multisite installs
 
-### WP Offload S3 0.8 - 2015-01-10 ###
+= WP Offload S3 0.8 - 2015-01-10 =
 * New: Redesigned settings UI
 * Improvement: SSL setting can be fully controlled, HTTPS for urls always, based on request or never
 * Improvement: Download files from S3 that are not found on server when running Regenerate Thumbnails plugin
@@ -446,14 +438,14 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Bug Fix: Files for all subsites going into the same S3 folder on multisite installs setup prior to WP 3.5
 * Bug Fix: 'attempting to access local file system' error for some installs
 
-### WP Offload S3 0.7.2 - 2014-12-11 ###
+= WP Offload S3 0.7.2 - 2014-12-11 =
 * Bug: Some buckets in the EU region causing permission and HTTP errors
 * Bug: Undefined variable: message in view/error.php also causing white screens
 
-### WP Offload S3 0.7.1 - 2014-12-05 ###
+= WP Offload S3 0.7.1 - 2014-12-05 =
 * Bug: Read-only error on settings page sometimes false positive
 
-### WP Offload S3 0.7 - 2014-12-04 ###
+= WP Offload S3 0.7 - 2014-12-04 =
 * New: Proper S3 region subdomain in URLs for buckets not in the US Standard region (e.g. https://s3-us-west-2.amazonaws.com/...)
 * New: Update all existing attachment meta with bucket region (automatically runs in the background)
 * New: Get secure URL for different image sizes (iamzozo)
@@ -476,10 +468,10 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * Bug Fix: S3 file overwritten when file with same name uploaded and local file removed (dataferret)
 * Bug Fix: Manually resized images not uploaded (gmauricio)
 
-### WP Offload S3 0.6.1 - 2013-09-21 ###
+= WP Offload S3 0.6.1 - 2013-09-21 =
 * WP.org download of Amazon Web Services plugin is giving a 404 Not Found, so directing people to download from Github instead
 
-### WP Offload S3 0.6 - 2013-09-20 ###
+= WP Offload S3 0.6 - 2013-09-20 =
 * Complete rewrite
 * Now requires PHP 5.3.3+
 * Now requires the [Amazon Web Services plugin](http://wordpress.org/extend/plugins/amazon-web-services/) which contains the latest PHP libraries from Amazon
@@ -490,7 +482,7 @@ This version requires PHP 5.3.3+ and the Amazon Web Services plugin
 * New Option: Remove uploaded file from local filesystem once it has been copied to S3
 * New Option: Copy any HiDPI (@2x) images to S3 (works with WP Retina 2x plugin)
 
-### WP Offload S3 0.5 - 2013-01-29 ###
+= WP Offload S3 0.5 - 2013-01-29 =
 * Forked [Amazon S3 for WordPress with CloudFront](http://wordpress.org/extend/plugins/tantan-s3-cloudfront/)
 * Cleaned up the UI to fit with today's WP UI
 * Fixed issues causing error messages when WP_DEBUG is on
